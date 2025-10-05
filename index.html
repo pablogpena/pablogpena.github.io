@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pablo G. Peña | Personal Portfolio</title>
+  <style>
+    /* Reset & fonts */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; line-height: 1.6; background: #f9f9f9; color: #333; }
+    a { color: #007acc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Container */
+    .container { max-width: 900px; margin: auto; padding: 2rem; }
+
+    /* Header */
+    header { text-align: center; margin-bottom: 4rem; }
+    header h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.2rem; color: #555; }
+
+    /* Sections */
+    section { margin-bottom: 4rem; }
+    h2 { font-size: 2rem; margin-bottom: 1rem; border-bottom: 2px solid #007acc; display: inline-block; padding-bottom: 0.3rem; }
+
+    /* About Me */
+    #about p { max-width: 700px; margin: 0.5rem auto; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+    .project-card { background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    .project-card h3 { margin-bottom: 0.5rem; }
+    .project-card p { font-size: 0.95rem; color: #555; }
+
+    /* Contact */
+    .contact a { display: inline-block; margin-right: 1rem; font-weight: bold; }
+
+    /* Footer */
+    footer { text-align: center; padding: 2rem 0; color: #777; font-size: 0.9rem; border-top: 1px solid #eee; }
+
+    /* Responsive */
+    @media(min-width: 600px){
+      .projects { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media(min-width: 900px){
+      .projects { grid-template-columns: repeat(3, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Hello, I'm Pablo G. Peña 👋</h1>
+      <p>Evolutionary Biologist & Scientific Programmer (Python & R)</p>
+      <p>
+        <a href="https://github.com/pablogpena" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/pablogpena" target="_blank">LinkedIn</a>
+      </p>
+    </header>
+
+    <!-- About Me -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm an evolutionary biologist with a strong focus on computational methods. I develop Python and R tools for phylogenetic analysis, diversification modeling, and evolutionary simulations.</p>
+      <p>I enjoy translating complex biological data into clear insights using code and visualization, combining biology with quantitative approaches.</p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-card">
+          <h3>Phylogenetic CNN Models</h3>
+          <p>Developed convolutional neural network models to predict diversification rates from large phylogenetic trees.</p>
+        </div>
+        <div class="project-card">
+          <h3>R Evolutionary Packages</h3>
+          <p>Created several R scripts and packages to simulate evolutionary scenarios and analyze phylogenetic data efficiently.</p>
+        </div>
+        <div class="project-card">
+          <h3>Bioinformatics Pipelines</h3>
+          <p>Built automated pipelines for genomic and phylogenetic analyses, integrating Python and R workflows for reproducibility.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="contact">
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://github.com/pablogpena" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/pablogpena" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 Pablo G. Peña. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
