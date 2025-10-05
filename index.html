@@ -1,35 +1,39 @@
-<section style="
-  display:flex;
-  align-items:center;
-  gap:3rem;
-  padding:3rem;
-  font-family:sans-serif;
-  max-width:900px;
-  margin:auto;
-  background-image: url('images/fondo_1.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius:10px;
+<body style="
+    margin: 0;
+    font-family: sans-serif;
+    background-image: url('images/fondo_1.png');
+    background-size: cover;          /* La imagen cubre todo */
+    background-position: center;     /* Centrada */
+    background-repeat: no-repeat;    /* No se repite */
+    min-height: 100vh;               /* Al menos toda la altura de la ventana */
 ">
-  <!-- Imagen circular grande -->
-  <img src="images/profile_1.JPG" alt="Pablo G. Peña"
-       style="width:250px; height:250px; object-fit:cover; border-radius:50%; flex-shrink:0; box-shadow:0 6px 10px rgba(0,0,0,0.25);">
+    <section style="
+        display:flex;
+        align-items:center;
+        gap:3rem;
+        padding:3rem;
+        max-width:900px;
+        margin:auto;
+        border-radius:10px;
+        flex-wrap: wrap;
+    ">
+        <img src="images/profile_1.JPG" alt="Pablo G. Peña"
+             style="width:250px; height:250px; object-fit:cover; border-radius:50%; flex-shrink:0; box-shadow:0 6px 10px rgba(0,0,0,0.25);">
 
-  <!-- Texto dentro de un cuadro semi-transparente que armoniza con la imagen -->
-  <div style="
-       flex:1;
-       background-color: rgba(255,255,255,0.4); /* transparente y suave */
-       padding:2rem;
-       border-radius:10px;
-       color:black; /* letras negras */
-       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  ">
-    <h2>About Me</h2>
-    <p>
-      I am an evolutionary biologist specializing in developing new AI methods to tackle complex evolutionary questions. 
-      I also conduct empirical research, with experience ranging from microbial ecology to macroevolutionary patterns. 
-      My multidisciplinary approach allows me to understand diverse biological problems and provide solutions with programming and computational tools.
-    </p>
-  </div>
-</section>
+        <div style="
+            flex:1;
+            background-color: rgba(255,255,255,0.4); /* Cuadro semi-transparente */
+            padding:2rem;
+            border-radius:10px;
+            color:black;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        ">
+            <h2>About Me</h2>
+            <p>
+              I am an evolutionary biologist specializing in developing new AI methods to tackle complex evolutionary questions. 
+              I also conduct empirical research, with experience ranging from microbial ecology to macroevolutionary patterns. 
+              My multidisciplinary approach allows me to understand diverse biological problems and provide solutions with programming and computational tools.
+            </p>
+        </div>
+    </section>
+</body>
