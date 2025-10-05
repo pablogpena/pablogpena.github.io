@@ -2,38 +2,69 @@
     margin: 0;
     font-family: sans-serif;
     background-image: url('images/fondo_1.png');
-    background-size: cover;          /* La imagen cubre todo */
-    background-position: center;     /* Centrada */
-    background-repeat: no-repeat;    /* No se repite */
-    min-height: 100vh;               /* Al menos toda la altura de la ventana */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 ">
-    <section style="
-        display:flex;
-        align-items:center;
-        gap:3rem;
-        padding:3rem;
-        max-width:900px;
-        margin:auto;
-        border-radius:10px;
-        flex-wrap: wrap;
-    ">
-        <img src="images/profile_1.JPG" alt="Pablo G. Peña"
-             style="width:250px; height:250px; object-fit:cover; border-radius:50%; flex-shrink:0; box-shadow:0 6px 10px rgba(0,0,0,0.25);">
 
-        <div style="
-            flex:1;
-            background-color: rgba(255,255,255,0.4); /* Cuadro semi-transparente */
-            padding:2rem;
-            border-radius:10px;
-            color:black;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        ">
-            <h2>About Me</h2>
-            <p>
-              I am an evolutionary biologist specializing in developing new AI methods to tackle complex evolutionary questions. 
-              I also conduct empirical research, with experience ranging from microbial ecology to macroevolutionary patterns. 
-              My multidisciplinary approach allows me to understand diverse biological problems and provide solutions with programming and computational tools.
-            </p>
+<!-- Sección principal -->
+<section style="
+    display:flex;
+    align-items:flex-start;
+    gap:3rem;
+    padding:3rem;
+    max-width:900px;
+    margin:auto;
+    border-radius:10px;
+    flex-wrap: wrap;
+">
+
+    <!-- Bloque de la foto y datos personales -->
+    <div style="display:flex; flex-direction:column; align-items:center; gap:1rem; flex-shrink:0;">
+        <!-- Foto circular grande -->
+        <img src="images/profile_1.JPG" alt="Pablo G. Peña"
+             style="width:250px; height:250px; object-fit:cover; border-radius:50%; box-shadow:0 6px 10px rgba(0,0,0,0.25);">
+
+        <!-- Nombre y título -->
+        <div style="text-align:center;">
+            <h2 style="margin:0;">Pablo G. Peña</h2>
+            <p style="margin:0; font-size:1rem; color:white; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">PhD Student</p>
         </div>
-    </section>
+
+        <!-- Iconos con enlaces -->
+        <div style="display:flex; gap:1rem; font-size:1.5rem; justify-content:center; margin-top:0.5rem;">
+            <a href="https://github.com/pablogpena" target="_blank" style="color:white;">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user=TU_ID_DE_GOOGLE_SCHOLAR" target="_blank" style="color:white;">
+                <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" style="color:white;">
+                <i class="fab fa-orcid"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Cuadro About Me -->
+    <div style="
+        flex:1;
+        background-color: rgba(255,255,255,0.4);
+        padding:2rem;
+        border-radius:10px;
+        color:black;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    ">
+        <h2>About Me</h2>
+        <p>
+          I am an evolutionary biologist specializing in developing new AI methods to tackle complex evolutionary questions. 
+          I also conduct empirical research, with experience ranging from microbial ecology to macroevolutionary patterns. 
+          My multidisciplinary approach allows me to understand diverse biological problems and provide solutions with programming and computational tools.
+        </p>
+    </div>
+
+</section>
+
+<!-- Font Awesome (para iconos) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-b2xTyLML1UoV1eLxZkXy5WJdGm5s3A1+8zK8wN3+3F7I1B2Tvb/jr0Mtz/0xH5ZgP7VJ5t5Wx6uHUR0r8q5T7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
