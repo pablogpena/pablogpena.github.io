@@ -11,14 +11,20 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius:10px;
-  color:white;
 ">
   <!-- Imagen circular grande -->
   <img src="images/profile_1.JPG" alt="Pablo G. Peña"
        style="width:250px; height:250px; object-fit:cover; border-radius:50%; flex-shrink:0; box-shadow:0 6px 10px rgba(0,0,0,0.25);">
 
-  <!-- Texto -->
-  <div style="flex:1; text-shadow: 1px 1px 3px rgba(0,0,0,0.6);">
+  <!-- Texto dentro de un cuadro semi-transparente que armoniza con la imagen -->
+  <div style="
+       flex:1;
+       background-color: rgba(255,255,255,0.4); /* transparente y suave */
+       padding:2rem;
+       border-radius:10px;
+       color:black; /* letras negras */
+       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  ">
     <h2>About Me</h2>
     <p>
       I am an evolutionary biologist specializing in developing new AI methods to tackle complex evolutionary questions. 
