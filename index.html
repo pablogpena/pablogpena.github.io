@@ -1,132 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pablo G. Peña</title>
-    <!-- Font Awesome para iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-b2xTyLML1UoV1eLxZkXy5WJdGm5s3A1+8zK8wN3+3F7I1B2Tvb/jr0Mtz/0xH5ZgP7VJ5t5Wx6uHUR0r8q5T7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-            background-image: url('images/fondo_1.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            min-height: 100vh;
-            color: black;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pablo G. Peña</title>
 
-        section {
-            max-width: 900px;
-            margin: 3rem auto;
-            padding: 2rem;
-            border-radius: 10px;
-            background-color: rgba(255,255,255,0.75);
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
+  <!-- ✅ Font Awesome (versión oficial actualizada) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-        .profile-section {
-            display: flex;
-            align-items: flex-start;
-            gap: 3rem;
-            flex-wrap: wrap;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-image: url('images/fondo_1.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: black;
+    }
 
-        .profile-left {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            flex-shrink: 0;
-        }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      border-radius: 10px;
+      background-color: rgba(255, 255, 255, 0.75);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        .profile-left img {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 50%;
-            box-shadow: 0 6px 10px rgba(0,0,0,0.25);
-        }
+    .profile-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
 
-        .profile-left h2, .profile-left p {
-            margin: 0;
-        }
+    .profile-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      flex-shrink: 0;
+    }
 
-        .profile-left p {
-            font-size: 1rem;
-            color: black;
-        }
+    .profile-left img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+    }
 
-        .icon-row {
-            display: flex;
-            gap: 1rem;
-            font-size: 1.5rem;
-            justify-content: center;
-            margin-top: 0.5rem;
-        }
+    .profile-left h2,
+    .profile-left p {
+      margin: 0;
+    }
 
-        .icon-row a {
-            color: black;
-            text-decoration: none;
-        }
+    .profile-left p {
+      font-size: 1rem;
+      color: black;
+    }
 
-        .icon-row svg {
-            width: 1.5rem;
-            height: 1.5rem;
-            vertical-align: middle;
-            fill: currentColor;
-        }
-    </style>
+    .icon-row {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.8rem;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+
+    .icon-row a {
+      color: black;
+      text-decoration: none;
+      transition: transform 0.2s, color 0.2s;
+    }
+
+    .icon-row a:hover {
+      color: #0056b3;
+      transform: scale(1.2);
+    }
+
+    /* Ajuste del icono SVG de Google Scholar */
+    .scholar-icon {
+      width: 1.6rem;
+      height: 1.6rem;
+      vertical-align: middle;
+    }
+  </style>
 </head>
 <body>
-
-<!-- About Me Section -->
-<section class="profile-section">
+  <!-- About Me Section -->
+  <section class="profile-section">
     <div class="profile-left">
-        <img src="images/profile_1.JPG" alt="Pablo G. Peña">
-        <h2>Pablo G. Peña</h2>
-        <p>PhD Student</p>
-        <div class="icon-row">
-            <a href="https://github.com/pablogpena" target="_blank"><i class="fab fa-github"></i></a>
+      <img src="images/profile_1.JPG" alt="Pablo G. Peña" />
+      <h2>Pablo G. Peña</h2>
+      <p>PhD Student</p>
+      <div class="icon-row">
+        <!-- GitHub -->
+        <a href="https://github.com/pablogpena" target="_blank" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
 
-            <!-- Google Scholar SVG -->
-            <a href="https://scholar.google.es/citations?user=bXAciWMAAAAJ&hl=es&oi=ao" target="_blank" title="Google Scholar">
-                <svg viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12c0 5.52 4.48 10 10 10s10-4.48 10-10c0-5.52-4.48-10-10-10zm0 3c1.93 0 3.5 1.57 3.5 3.5S13.93 12 12 12s-3.5-1.57-3.5-3.5S10.07 5 12 5zm0 14c-2.33 0-4.31-1.46-5.11-3.5h10.22c-.8 2.04-2.78 3.5-5.11 3.5z"/>
-                </svg>
-            </a>
+        <!-- Google Scholar (SVG: G con gorro) -->
+        <a
+          href="https://scholar.google.es/citations?user=bXAciWMAAAAJ&hl=es&oi=ao"
+          target="_blank"
+          title="Google Scholar"
+        >
+          <svg
+            class="scholar-icon"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="32" cy="32" r="30" fill="#4285F4" />
+            <path
+              d="M47 26l-15-8-15 8 15 8 15-8zm-15 10l-15-8v12l15 8 15-8V28l-15 8z"
+              fill="#fff"
+            />
+            <text
+              x="32"
+              y="45"
+              font-family="Arial, sans-serif"
+              font-size="18"
+              font-weight="bold"
+              text-anchor="middle"
+              fill="white"
+            >
+              G
+            </text>
+          </svg>
+        </a>
 
-            <a href="https://orcid.org/0009-0001-0014-3787" target="_blank"><i class="fab fa-orcid"></i></a>
-        </div>
+        <!-- ORCID -->
+        <a href="https://orcid.org/0009-0001-0014-3787" target="_blank" title="ORCID">
+          <i class="fab fa-orcid"></i>
+        </a>
+      </div>
     </div>
 
-    <div style="flex:1;">
-        <h2>About Me</h2>
-        <p>
-            I am an evolutionary biologist specializing in developing new AI methods to tackle complex evolutionary questions. 
-            I also conduct empirical research, with experience ranging from microbial ecology to macroevolutionary patterns. 
-            My multidisciplinary approach allows me to understand diverse biological problems and provide solutions with programming and computational tools.
-        </p>
+    <div style="flex: 1">
+      <h2>About Me</h2>
+      <p>
+        I am an evolutionary biologist specializing in developing new AI methods to
+        tackle complex evolutionary questions. I also conduct empirical research,
+        with experience ranging from microbial ecology to macroevolutionary
+        patterns. My multidisciplinary approach allows me to understand diverse
+        biological problems and provide solutions with programming and computational
+        tools.
+      </p>
     </div>
-</section>
+  </section>
 
-<!-- Other empty sections for future content -->
-<section>
+  <!-- Empty sections -->
+  <section>
     <h2>Research</h2>
     <p>Content coming soon...</p>
-</section>
+  </section>
 
-<section>
+  <section>
     <h2>Projects</h2>
     <p>Content coming soon...</p>
-</section>
+  </section>
 
-<section>
+  <section>
     <h2>Contact</h2>
     <p>Content coming soon...</p>
-</section>
-
+  </section>
 </body>
 </html>
